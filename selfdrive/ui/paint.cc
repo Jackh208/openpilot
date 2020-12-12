@@ -881,12 +881,9 @@ static void ui_draw_background(UIState *s) {
 }
 
 void ui_draw(UIState *s) {
-<<<<<<< HEAD
+
   s->scene.viz_rect = Rect{bdr_s * 3, bdr_s, s->fb_w - 4 * bdr_s, s->fb_h - 2 * bdr_s};
   s->scene.ui_viz_ro = 0;
-=======
-  s->scene.viz_rect = Rect{bdr_s, bdr_s, s->fb_w - 2 * bdr_s, s->fb_h - 2 * bdr_s};
->>>>>>> upstream/master
   if (!s->scene.uilayout_sidebarcollapsed) {
     s->scene.viz_rect.x += sbr_w;
     s->scene.viz_rect.w -= sbr_w;

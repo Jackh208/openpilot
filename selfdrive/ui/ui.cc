@@ -25,14 +25,8 @@ int write_param_float(float param, const char* param_name, bool persistent_param
 }
 
 void ui_init(UIState *s) {
-<<<<<<< HEAD
   s->sm = new SubMaster({"modelV2", "controlsState", "uiLayoutState", "liveCalibration", "radarState", "thermal",
-                         "health", "carParams", "ubloxGnss", "driverState", "dMonitoringState", "sensorEvents", "carState", "gpsLocationExternal"});
-=======
-  s->sm = new SubMaster({"modelV2", "controlsState", "uiLayoutState", "liveCalibration", "radarState", "thermal", "frame",
-                         "health", "carParams", "ubloxGnss", "driverState", "dMonitoringState", "sensorEvents"});
->>>>>>> upstream/master
-
+                         "health", "carParams", "ubloxGnss", "driverState", "dMonitoringState", "sensorEvents", "carState", "liveMpc", "gpsLocationExternal"});
   s->started = false;
   s->status = STATUS_OFFROAD;
   s->scene.satelliteCount = -1;
